@@ -9,7 +9,6 @@ söndürülmektedir.
 - RTOS: FreeRTOS (Classic API - `CMSIS_V1` değil!)
 
 ## 📁 İçerik
-
 - [Görev Oluşturma](#1--görev-oluşturma)
 - [Görev Fonksiyonları](#2--görev-fonksiyonları)
 - [Zamanlayıcıyı Başlatma](#3--zamanlayıcıyı-başlatma)
