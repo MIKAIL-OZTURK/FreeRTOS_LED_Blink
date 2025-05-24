@@ -10,13 +10,13 @@ söndürülmektedir.
 
 ## 📁 İçerik
 
-- [Görev Oluşturma](#1-görev-oluşturma)
-- [Görev Fonksiyonları](#2-görev-fonksiyonları)
-- [Zamanlayıcıyı Başlatma](#3-zamanlayıcıyı-başlatma)
-- [Örnek Kod](#4-örnek-kod)
-- [Uygulama Videosu](#-uygulama-videosu)
+- [Görev Oluşturma](#1--görev-oluşturma)
+- [Görev Fonksiyonları](#2--görev-fonksiyonları)
+- [Zamanlayıcıyı Başlatma](#3--zamanlayıcıyı-başlatma)
+- [Örnek Kod](#4--örnek-kod-basitleştirilmiş)
+- [Uygulama Videosu](#uygulama-videosu)
 
-## 1. 📌 Görev Oluşturma
+## 1. Görev Oluşturma
 
 Görevler `xTaskCreate()` fonksiyonu ile tanımlanır.
 
@@ -46,7 +46,7 @@ if (status != pdPASS) {
 }
 ```
 
-## 2. 🧠 Görev Fonksiyonları
+## 2. Görev Fonksiyonları
 Her görev, 1 saniyede bir ilgili pini toggle eder. Bu işlemler FreeRTOS görev döngüsünde yapılır.
 
 ```c
@@ -75,7 +75,7 @@ void LedTask2(void* pvParameters)
 
 
 
-## 3. 🕹️ Zamanlayıcıyı Başlatma
+## 3. Zamanlayıcıyı Başlatma
 Tüm görevler oluşturulduktan sonra, zamanlayıcı (Scheduler) başlatılır:
 
 ```c
@@ -85,7 +85,7 @@ vTaskStartScheduler();
 Bu fonksiyon çağrıldıktan sonra, kontrol artık FreeRTOS'a geçer ve main() içindeki sonsuz döngüye girilmez.
 
 
-## 4. 💡 Örnek Kod (Basitleştirilmiş)
+## 4. Örnek Kod (Basitleştirilmiş)
 
 ```c
 #include "main.h"
@@ -129,7 +129,7 @@ void LedTask2(void* pvParameters)
 
 ```
 
-# Uygulama Videosu
+## Uygulama Videosu
 
 
 
